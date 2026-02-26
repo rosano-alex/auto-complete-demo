@@ -15,7 +15,7 @@ export interface Company {
   bs: string;
 }
 
-type UserData = {
+export type User = {
   id: number
   name: string
   username: string
@@ -24,10 +24,12 @@ type UserData = {
   website?: string
   address: Address
   company?: Company
+  // placeholder for the formatted name, which is added in the useGetUsers hook
+  formattedName?: string
 }
 
 
-export type User = Readonly<UserData>;
+
 
 
 
