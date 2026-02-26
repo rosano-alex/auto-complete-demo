@@ -7,7 +7,7 @@ User data is fetched on load, then formatted and sorted alphabetically before be
 
 ## Local development setup
 
-####Command line setup instruction
+<b>Command line setup instruction</b>
 
 Yarn setup:
 
