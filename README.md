@@ -45,3 +45,4 @@ In the project directory, you can run the following scripts.
 | `yarn start` | `npm run start` | Runs the app in the development mode and opens [http://localhost:3000](http://localhost:3000)
 | `yarn build` | `npm run build` | Builds the optimized app for production to the `build` folder
 | `yarn prettier` | `npm run prettier` | Recursively runs prettier on every file in the src folder
+| `yarn test` | `npm run test` | Run project unit tests
