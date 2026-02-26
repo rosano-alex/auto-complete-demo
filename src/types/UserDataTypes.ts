@@ -16,20 +16,14 @@ export interface Company {
 }
 
 export type User = {
-  id: number
-  name: string
-  username: string
-  email?: string
-  phone?: string
-  website?: string
-  address: Address
-  company?: Company
+  id: number;
+  name: string;
+  username: string;
+  email?: string;
+  phone?: string;
+  website?: string;
+  address: Address;
+  company?: Company;
   // placeholder for the formatted name, which is added in the useGetUsers hook
-  formattedName?: string
-}
-
-
-
-
-
-
+  formattedName?: string;
+};

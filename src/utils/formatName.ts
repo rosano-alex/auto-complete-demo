@@ -1,6 +1,14 @@
 // constants`
-const TITLES_SET = new Set(['Mr.', 'Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.', 'Rev.',]);
-const SUFFIXES_SET = new Set(['Jr.', 'Sr.', 'II', 'III', 'IV', 'V',]);
+const TITLES_SET = new Set([
+  "Mr.",
+  "Mrs.",
+  "Ms.",
+  "Miss",
+  "Dr.",
+  "Prof.",
+  "Rev.",
+]);
+const SUFFIXES_SET = new Set(["Jr.", "Sr.", "II", "III", "IV", "V"]);
 
 /**
  * Parses and formats a name into:
