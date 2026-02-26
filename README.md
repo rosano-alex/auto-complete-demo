@@ -42,7 +42,7 @@ npm run start
 
 ## Development scripts
 
-In the project directory, you can run the following scripts.
+In the project directory you can run the following scripts.
 
 | yarn | NPM | info |
 |------|-------|-------|
