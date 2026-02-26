@@ -1,48 +1,46 @@
-<p style="text-align: Left;"><img src="misc/title.png" width="650"></p>
+<p style="text-align: Left;"><img src="misc/title.png" width="550"></p>
+
+## High-level overview
 
 
+<br>
+## Local development setup
 
-### Table of contents
+Below you will f
 
--   [Installation Instructions](#installation-instructions)
--   [Development Guide](#dev-guide)
--   [Available Scripts](#features)
--   [Folder Structure](##folder-structure)
+Yarn setup:
 
+```bash
+## STEP 1
+git clone https://github.com/rosano-alex/auto-complete-demo.git
 
-## Installation
+## STEP 2
+cd auto-complete-demo && yarn
 
-1) Clone the repository using terminal:
-### `clone`
-2) After cloning change into the repo you have just installed:
-### `CD auto-complete-demo`
-3) Run one of the following install commands (yarn or npm):
-### `yarn`
-or
-### `npm install`
-
-## At a Glance
-
-```jsx
-// example code
-
+## STEP 3
+yarn start
 ```
-explanation here
+NPM setup:
+
+```bash
+## STEP 1
+git clone https://github.com/rosano-alex/auto-complete-demo.git
+
+## STEP 2
+cd auto-complete-demo && npm install
+
+## STEP 3
+npm run start
+```
 
 
-## Available Scripts
+<br>
+## Available developer scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts.
 
-### `yarn start`
-
-Runs the app in the development mode.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-
+| yarn | NPM | info |
+|------|-------|-------|
+| `yarn start` | `npm run start` | Runs the app in the development mode and opens [http://localhost:3000](http://localhost:3000)
+| `yarn build` | `npm run build` | Builds the optimized app for production to the `build` folder
+| `yarn prettier` | `npm run prettier` | Recursively runs prettier on every file in the src folder

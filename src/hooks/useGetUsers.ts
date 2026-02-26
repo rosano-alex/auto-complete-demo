@@ -1,10 +1,10 @@
 // hooks/usePosts.ts
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-import { User } from '../types';
-import { formatName } from '../utils';
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { User } from "../types";
+import { formatName } from "../utils";
 
-const ENDPOINT = 'https://jsonplaceholder.typicode.com/users';
+const ENDPOINT = "https://jsonplaceholder.typicode.com/users";
 
 // Define fetch API based method using the axios library
 const fetchUsers = async (): Promise<User[]> => {
@@ -16,16 +16,16 @@ const fetchUsers = async (): Promise<User[]> => {
   }));
 
   return enriched.sort((a, b) =>
-    a.formattedName.localeCompare(b.formattedName)
+    a.formattedName.localeCompare(b.formattedName),
   );
 };
 
 // react hook for getting user data
-export function useGetUsers(keys:string[]) {
+export function useGetUsers(keys: string[]) {
   // use transtack's react query library
   const users = useQuery({
     queryKey: keys,
     queryFn: fetchUsers,
-  })
+  });
   return users;
-};
+}
