@@ -5,6 +5,8 @@ This application implements a simple auto-complete search component powered by t
 https://jsonplaceholder.typicode.com/users<br>
 User data is fetched on load, then formatted and sorted alphabetically before being rendered. Preprocessing the dataset ensures consistent display formatting and improves client-side performance.
 
+<br>
+
 ## Local development setup
 
 ### Command line setup instruction
@@ -35,6 +37,7 @@ npm run start
 ```
 
 
+<br>
 <br>
 
 ### Development scripts
