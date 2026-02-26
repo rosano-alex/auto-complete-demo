@@ -10,6 +10,7 @@ import UserAutoComplete from './components/UserAutoComplete/UserAutoComplete';
 
 function App() {
   
+  // STATE MANAGEMENT: store the selected user in a state variable
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
   
   return (

@@ -1,10 +1,11 @@
-// MyCardComponent.tsx
+// A simple card component to display user information`
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import {  User } from '../../types';
 import { formatName } from '../../utils';
+
 
 interface UserCardProps {
   data: User | null;
