@@ -1,12 +1,13 @@
 <p style="text-align: Left;"><img src="misc/title.png" width="550"></p>
 
-## High-level overview
+## Overview
+This application implements a simple auto-complete search component powered by the JSONPlaceholder Users API:
+https://jsonplaceholder.typicode.com/users<br>
+User data is fetched on load, then formatted and sorted alphabetically before being rendered. Preprocessing the dataset ensures consistent display formatting and improves client-side performance.
 
-
-<br>
 ## Local development setup
 
-Below you will f
+####Command line setup instruction
 
 Yarn setup:
 
