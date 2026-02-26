@@ -1,6 +1,9 @@
+// A simple component to display the app title
+
 import title from './app-title.png';
   import Paper from '@mui/material/Paper';
   import { styled } from '@mui/material/styles';
+  
   
   const PaperTitle = styled(Paper)(({ theme }) => ({
     width: 700,

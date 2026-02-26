@@ -1,3 +1,4 @@
+// A simple autocomplete component to select a user from the list of users fetched from the API
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
