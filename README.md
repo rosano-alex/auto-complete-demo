@@ -36,7 +36,7 @@ npm run start
 
 
 <br>
-## Available developer scripts
+<b>Available developer scripts</b>
 
 In the project directory, you can run the following scripts.
 

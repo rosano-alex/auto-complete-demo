@@ -6,7 +6,9 @@ import { formatName } from "../utils";
 
 const ENDPOINT = "https://jsonplaceholder.typicode.com/users";
 
-// Define fetch API based method using the axios library
+// Define fetch API based method using axios library
+// run the 'formatName' function to add a 'formattedName' property to each user object
+// APLHABETICALLY sort the result array
 const fetchUsers = async (): Promise<User[]> => {
   const { data } = await axios.get<User[]>(ENDPOINT);
 
@@ -20,7 +22,7 @@ const fetchUsers = async (): Promise<User[]> => {
   );
 };
 
-// react hook for getting user data
+// react hook for fetching user data
 export function useGetUsers(keys: string[]) {
   // use transtack's react query library
   const users = useQuery({
