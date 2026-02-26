@@ -1,4 +1,4 @@
-<p style="text-align: Left;"><img src="misc/title.png" width="550"></p>
+<p style="text-align: Left;"><img src="misc/title.png" width="460"></p>
 
 ## Overview
 This application implements a simple auto-complete search component powered by the Users API endpoint:
@@ -7,7 +7,7 @@ User data is fetched on load, then formatted and sorted alphabetically before be
 
 ## Local development setup
 
-<mark>Command line setup instruction</mark>
+<span style="font-size: 140%; font-weight: bold; color: darkGreen;">Command line setup instruction</span>
 
 Yarn setup:
 
@@ -36,7 +36,7 @@ npm run start
 
 
 <br>
-<mark>Available developer scripts</mark>
+<span style="font-size: 140%; font-weight: bold; color: darkGreen;">Available developer scripts</span>
 
 In the project directory, you can run the following scripts.
 
