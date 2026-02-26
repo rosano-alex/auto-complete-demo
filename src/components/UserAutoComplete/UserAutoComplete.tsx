@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import CircularProgress from '@mui/material/CircularProgress';
 import { User } from '../../types';
-import { capitalize } from '@mui/material';
 import { useGetUsers } from '../../hooks/useGetUsers';
-import { QueryClientProvider } from '@tanstack/react-query';
 import { formatName } from '../../utils/formatName';
 
+interface Props {
+  onSelect: (user: User | null) => void;
+}
 
-export const UserAutoComplete: React.FC = () => {
+export default function UserAutoComplete({ onSelect }: Props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [users, setUsers] = useState<User[] | null>(null);
+  const [users, setUsers] = useState<User | null>(null);
   const { data, isLoading, isError } = useGetUsers(['users']);
   
   if (isLoading) return <div>Loading...</div>;
@@ -20,14 +20,14 @@ export const UserAutoComplete: React.FC = () => {
   return (
     <Autocomplete
       id="dynamic-autocomplete"
-      style={{ width: 340 }}
+      style={{ width: 365, backgroundColor: '#daedfc', borderRadius: 3 }}
       open={isOpen}
       onOpen={() => setIsOpen(true)}
       onClose={() => setIsOpen(false)}
       options={Array.isArray(data) ? data : []}
       value={users}
-      onChange={(event, newValue) => setUsers(newValue)}
-      getOptionLabel={(option) => formatName(option.name)}
+      onChange={(event, newValue) => onSelect(newValue)}
+      getOptionLabel={(option) => option.formattedName || formatName(option.name)}
       loading={isLoading}
       renderInput={(params) => (
         <TextField
