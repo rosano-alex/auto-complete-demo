@@ -9,7 +9,7 @@ User data is fetched on load, then formatted and sorted alphabetically before be
 
 ## Local development setup
 
-#### Command line setup instruction
+#### Command line setup instructions
 
 Yarn setup:
 
