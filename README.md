@@ -7,7 +7,7 @@ User data is fetched on load, then formatted and sorted alphabetically before be
 
 ## Local development setup
 
-#### <b>Command line setup instruction</b>
+###Command line setup instruction
 
 Yarn setup:
 
@@ -37,7 +37,7 @@ npm run start
 
 <br>
 
-####<b>Development scripts</b>
+###Development scripts<
 
 In the project directory, you can run the following scripts.
 
